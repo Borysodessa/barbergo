@@ -48,33 +48,59 @@
 
 /*-------------main index-------------*/
 
+.hero{
+  background-color: #ece2e2;  /*временно*/
+    padding:  200px 0;
+}
+
 .hero__title {
     font-size: 44px;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.06em;
-    text-align: center;
     color: var(--secondary-color);
+    text-align: center;
+
+    width: 696px;
+    margin: 0 auto 30px auto;
 }
 
 .hero__button{
+    display: block;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;
+    margin: 0 auto;
     color: var(--button-color);
-
     background-color: var(--button-background-color);
-    border: none;
+
+    padding: 10px 32px 10px 32px;
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+.features{
+    padding: 94px 0;
+}
+
+.features__list img{
+  margin-bottom: 30px;
 }
 
 .features__list h3{
+  margin-bottom: 10px;
+}
+
+.features__list h3 {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: var( --feature__list-color);
+    color: var(--feature__list-color);
+    margin: 0 0 10px 0;
 }
 
 .features__list p{
@@ -83,6 +109,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    margin: 0;
 }
 
 .our-product__title, .our-team__title, .regular-customers__title{
@@ -95,13 +122,56 @@
     color: var(--title-color);
 }
 
-.our-product__list p{
+.our-product h2{
+    margin: 0 0 50px 0;
+}
+
+.our-product__item p {
+    display: block;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-align: center;
-    --secondary-color: var(--secondary-color)
+    vertical-align: center;
+    color: var(--secondary-color);
+    background-color: var(--background-our-product);
+    width: 370px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin: 0 0 94px 0;
+}
+
+.our-team{
+    padding: 94px 0;
+    background-color: var(--dirty-section-background-color);
+}
+
+.our-team__title{
+    margin: 0 0 50px 0;
+}
+
+.our-team__li{
+    padding-bottom: 24px;
+}
+
+.our-team__list img{
+    margin: 0 0 30px 0;
+}
+
+.our-team__list h3{
+    margin: 0 0 10px 0;
+}
+
+.our-team__list p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0 0 16px 0;
 }
 
 .our-team h3{
@@ -113,18 +183,23 @@
     color: var(--title-color);
 }
 
-.our-team p{
+.regular-customers{
+    padding: 94px 0;
+}
 
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--text-color);
+.regular-customers h2{
+    margin: 0 0 50px 0;
 }
 
 /*-----------main index2------------*/
+
+.our-projects__title{
+    display: none;
+}
+
+.section-filter{
+   padding-bottom: 25px;
+}
 
 .filter__list button{
     font-family: Roboto, sans-serif;
@@ -137,6 +212,20 @@
 .filter__list .filter_active {
     color: var(--filter__button_active-color);
     background-color: var(--filter__button_active-background-color);
+}
+
+.projects{
+    padding-bottom: 94px;
+    padding-top: 25px;
+    background-color: aquamarine;
+}
+
+.projects__list img{
+    margin: 0 0 20px 0;
+}
+
+.projects__list P{
+    
 }
 
 .projects__list h2{
@@ -164,32 +253,39 @@
 
 .footer{
     background-color: var(--footer-background-color);
+    padding: 60px 0;
+}
+
+.footer h2{
+    display: none;
 }
 
 .footer__link_logo{
+     margin: 0 0 20px 0;
     color: var(--secondary-color);
-}
+ }
 
 .footer__span_logo{
     color: var(--accent-color);
 }
 
-.footer__link_address{
+.footer-address__link_address{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
     color: var(--address-link-color);
-
+    margin: 0 0 90px 0;
 }
 
-.footer__link_mail{
+.footer-address__link_mail{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-mail-color);
+    margin: 0 0 90px 0;
 }
 
 .footer__link_tel{
@@ -207,6 +303,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+    margin: 0 0 20px 0;
 }
 
 .footer__button_subsсribe{
@@ -216,13 +313,8 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--button-color);
-
     background-color: var(--button-background-color);
     border: none;
-}
-
-.our-command {
-    background-color: var(--dirty-section-background-color);
 }
 
 .active {

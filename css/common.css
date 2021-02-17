@@ -7,8 +7,8 @@
     --secondary-background-color: #f5f4fa;
     --footer-background-color: #2f303a;
     --address-link-color: #ffffff;
-    --footer-mail-color: rgba(255, 255, 255,0.6);
-    --footer-tel-color: rgba(255, 255, 255,0.6);
+    --footer-mail-color: rgba(255, 255, 255, 0.6);
+    --footer-tel-color: rgba(255, 255, 255, 0.6);
     --active-color: #2196F3;
     --light-section-background-color: #ffffff;
     --dirty-section-background-color: #F5F4FA;
@@ -20,18 +20,42 @@
     --filter__button_active-background-color: #2196f3;
     --feature__list-color: #212121;
     --projects-p-color: #ffffff;
+    --background-our-product: rgba(47, 48, 58, 0.8);
 }
 
 
-.link{
+.html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+/*h3{*/
+/*    margin: 0;*/
+/*}*/
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.link {
     text-decoration: none;
 }
 
-.item{
+.item {
     list-style: none;
 }
 
-.button{
+img{
+    display: block;
+}
+
+.button {
     color: var(--button-color);
     background-color: var(--button-background-color);
     border: none

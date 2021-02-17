@@ -15,28 +15,33 @@
 <body class="body">
 
 <header class="header">
-  <nav>
-    <ul class="item">
-      <li>
-        <a href="#" class="header-logo header__link link">
-          <span class="header-logo__span">Web</span>Studio
-        </a>
-      </li>
-      <li>
-        <a href="#" class="header__link link active">
-          Студия
-        </a>
-      </li>
-      <li>
-        <a href="./index2.html" class="header__link link">
-          Портфолио
-        </a>
-      </li>
-      <li>
-        <a href="#" class="header__link link">
-          Контакты
-        </a>
-      </li>
+  <div class="container">
+    <nav>
+      <ul class="item">
+        <li>
+          <a href="#" class="header-logo header__link link">
+            <span class="header-logo__span">Web</span>Studio
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__link link active">
+            Студия
+          </a>
+        </li>
+        <li>
+          <a href="./index2.html" class="header__link link">
+            Портфолио
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__link link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="user-nav__list item">
       <li>
         <a href="mailto:info@example.com" class="user-nav__link link active">
           info@devstudio.com
@@ -48,19 +53,19 @@
         </a>
       </li>
     </ul>
-  </nav>
+  </div>
 </header>
 
 <main>
 
   <section class="hero">
-    <h1>Эффективные решения для вашего бизнеса</h1>
+    <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="hero__button">Заказать услугу</button>
   </section>
 
-  <section class="features">
-    <h2>Особенности</h2>
-    <ul class="item">
+  <section class="features container">
+    <h2>Особенности</h2>      <!--скрыть--->
+    <ul class="features__list item">
       <li class="item">
         <img src="images/features/img-svg/feature-pic1.svg" width="270"
              alt="рисунок локатора">
@@ -108,26 +113,26 @@
     </ul>
   </section>
 
-  <section class="our-product">
-    <h2>
+  <section class="our-product container">
+    <h2 class="our-product__title">
       Чем мы занимаемся
     </h2>
-    <ul class="item">
-      <li>
+    <ul class="our-product__list item">
+      <li class="our-product__item">
         <img src="images/product-img/product-img1.jpg" width="370"
              alt="пользователь печатает на ноутбуке">
         <p>
           Десктопные приложения
         </p>
       </li>
-      <li>
+      <li class="our-product__item">
         <img src="images/product-img/product-img2.jpg" width="370"
              alt="изображение мобильного телефона">
         <p>
           Мобильные приложения
         </p>
       </li>
-      <li>
+      <li class="our-product__item">
         <img src="images/product-img/product-img3.jpg" width="370"
              alt="изображение монитора ">
         <p>
@@ -137,60 +142,63 @@
     </ul>
   </section>
 
-  <section class="our-command">
-    <h2>Наша команда</h2>
-    <ul class="item">
-      <li>
-        <img src="images/our-team-img/our-team-img1.jpg" width="270" alt="фото
+  <section class="our-team">
+    <div class="container">
+      <h2 class="our-team__title">Наша команда</h2>
+      <ul class="our-team__list item">
+        <li>
+          <img src="images/our-team-img/our-team-img1.jpg" width="270" alt="фото
                  продукт дизайнера">
-        <h3>Игорь Демьяненко</h3>
-        <p>Product Designer</p>
-        <ul class="item">
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="images/our-team-img/our-team-img2.jpg" width="270" alt="фото
+          <h3>Николай Кучеренко</h3>
+          <p>Product Designer</p>
+          <ul class="our-team__list item">
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="images/our-team-img/our-team-img2.jpg" width="270" alt="фото
                 фронтенд разработчика">
-        <h3>Ольга Репина</h3>
-        <p>Frontend Developer</p>
-        <ul class="item">
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="images/our-team-img/our-team-img3.jpg" width="270" alt="фото
+          <h3>Ольга Иванова</h3>
+          <p>Frontend Developer</p>
+          <ul class="our-team__social item">
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="images/our-team-img/our-team-img3.jpg" width="270" alt="фото
                 маркетинг менеджера">
-        <h3>Николай Тарасов</h3>
-        <p>Marketing</p>
-        <ul class="item">
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="images/our-team-img/our-team-img4.jpg" width="270" alt="фото
+          <h3>Андрей Шевченко</h3>
+          <p>Marketing</p>
+          <ul class="our-team__social item">
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="images/our-team-img/our-team-img4.jpg" width="270" alt="фото
                 дизайнера">
-        <h3>Иван Николаев</h3>
-        <p>UI Designer</p>
-        <ul class="item">
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-        </ul>
-      </li>
-    </ul>
+          <h3>Иван Николаев</h3>
+          <p>UI Designer</p>
+          <ul class="our-team__social item">
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </section>
-  <section>
+
+  <section class="regular-customers container">
     <h2>Постоянные клиенты</h2>
     <ul class="item">
       <li>
@@ -234,51 +242,56 @@
 
   <footer class="footer">
 
-    <section class="footer__section_navigation">
-      <h2>Навигация</h2>   <!--скрыть-->
-      <a href="#" class="footer__link_logo link">
-        <span class="footer__span_logo">Web</span> Studio
-      </a>
-      <address>
-        <ul class="item">
-          <li>
-            <a href="https://goo.gl/maps/axRE5zmFLKqTCfMG6"
-               class="footer__link_address link" target="_blank">
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="footer__link_mail link">
-              info@example.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="footer__link_tel link">
-              +38 099 111 11 11
-            </a>
-          </li>
-        </ul>
-      </address>
-    </section>
+    <div class="container">
 
-    <section>
-      <h2>Социальные сети</h2>  <!--скрыть-->
-      <p class="footer__text_social">присоединяйтесь</p>
-      <ul class="item">
-        <li><a href="#" class="link"></a></li>
-        <li><a href="#" class="link"></a></li>
-        <li><a href="#" class="link"></a></li>
-        <li><a href="#" class="link"></a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Подписка</h2>  <!--скрыть-->
-      <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
-      <form>
-        <input type="email" value="E-mail">
-        <button type="submit" class="footer__button_subsсribe">Подписаться</button>
-      </form>
-    </section>
+      <section class="footer__section_navigation">
+
+        <h2>Навигация</h2>   <!--скрыть-->
+        <a href="#" class="footer__link_logo link">
+          <span class="footer__span_logo">Web</span> Studio
+        </a>
+        <address class="footer-address">
+          <ul class="item">
+            <li>
+              <a  href="https://goo.gl/maps/axRE5zmFLKqTCfMG6"
+                 class="footer-address__link link" target="_blank">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="footer__link_mail link">
+                info@example.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="footer__link_tel link">
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </section>
+
+      <section>
+        <h2>Социальные сети</h2>  <!--скрыть-->
+        <p class="footer__text_social">присоединяйтесь</p>
+        <ul class="item">
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Подписка</h2>  <!--скрыть-->
+        <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
+        <form>
+          <input type="email" value="E-mail">
+          <button type="submit" class="footer__button_subsсribe">Подписаться</button>
+        </form>
+      </section>
+    </div>
   </footer>
 </main>
 </body>

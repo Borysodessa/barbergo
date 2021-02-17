@@ -15,28 +15,33 @@
 <body class="body">
 
 <header class="header">
-  <nav>
-    <ul class="item">
-      <li>
-        <a href="#" class="header-logo header__link link">
-          <span class="header-logo__span">Web</span>Studio
-        </a>
-      </li>
-      <li>
-        <a href="#" class="header__link link active">
-          Студия
-        </a>
-      </li>
-      <li>
-        <a href="./index2.html" class="header__link link">
-          Портфолио
-        </a>
-      </li>
-      <li>
-        <a href="#" class="header__link link">
-          Контакты
-        </a>
-      </li>
+  <div class="container">
+    <nav>
+      <ul class="item">
+        <li>
+          <a href="#" class="header-logo header__link link">
+            <span class="header-logo__span">Web</span>Studio
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__link link">
+            Студия
+          </a>
+        </li>
+        <li>
+          <a href="./index2.html" class="header__link link active">
+            Портфолио
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__link link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="user-nav__list item">
       <li>
         <a href="mailto:info@example.com" class="user-nav__link link active">
           info@devstudio.com
@@ -48,13 +53,13 @@
         </a>
       </li>
     </ul>
-  </nav>
+  </div>
 </header>
 
 <main>
 
-  <section class="our-project">
-    <h1>Наши проэкты</h1>
+  <section class="our-projects container">
+    <h1 class="our-projects__title">Наши проэкты</h1>
 
     <section class="section-filter">
       <ul class="filter__list item">
@@ -76,100 +81,108 @@
       </ul>
     </section>
 
-    <section class="project">
+    <section class="projects">
       <ul class="projects__list item">
         <li>
           <a href="#" class="link">
             <img src="images/our-project/img-0.1.jpg" width="370"
                  alt="изображение ноутбука">
-              <p class="projects__text_hover">Технокряк это современная площадка распространения коронавируса.
-                Компании используют эту платформу для цифрового шпионажа и атак
-                на защищённые сервера конкурентов.
-              </p>
-              <h2>Технокряк</h2>
-              <p class="projects__text_filter">Веб-сайт</p>
+            <p class="projects__text_hover">Технокряк это современная площадка распространения коронавируса.
+              Компании используют эту платформу для цифрового шпионажа и атак
+              на защищённые сервера конкурентов.
+            </p>
+            <h2>Технокряк</h2>
+            <p class="projects__text_filter">Веб-сайт</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-1.jpg" width="370"
-                   alt="изображение двух баскетболистов в прыжке">
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p class="projects__text_filter">Дизайн</p>
+            <img src="images/our-project/img-1.jpg" width="370"
+                 alt="изображение двух баскетболистов в прыжке">
+            <h2>Постер New Orlean vs Golden Star</h2>
+            <p class="projects__text_filter">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-2.jpg" width="370" alt="постер рыбного ресторана">
-              <h2>Ресторан Seafood</h2>
-              <p class="projects__text_filter">Приложение</p>
+            <img src="images/our-project/img-2.jpg" width="370" alt="постер рыбного ресторана">
+            <h2>Ресторан Seafood</h2>
+            <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-3.jpg" width="370" alt="изображение наушников">
-              <h2>Проект Prime</h2>
-              <p class="projects__text_filter">Маркетинг</p>
+            <img src="images/our-project/img-3.jpg" width="370" alt="изображение наушников">
+            <h2>Проект Prime</h2>
+            <p class="projects__text_filter">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-4.jpg" width="370" alt="фото двух коробок">
-              <h2>Проект Boxes</h2>
-              <p class="projects__text_filter">Приложение</p>
+            <img src="images/our-project/img-4.jpg" width="370" alt="фото двух коробок">
+            <h2>Проект Boxes</h2>
+            <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-5.jpg" width="370" alt="фото монитора">
-              <h2>Inspiration has no Borders</h2>
-              <p class="projects__text_filter">Веб-сайт</p>
+            <img src="images/our-project/img-5.jpg" width="370" alt="фото монитора">
+            <h2>Inspiration has no Borders</h2>
+            <p class="projects__text_filter">Веб-сайт</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-6.jpg" width="370" alt="фото раскрытой книги">
-              <h2>Издание Limited Edition</h2>
-              <p class="projects__text_filter">Дизайн</p>
+            <img src="images/our-project/img-6.jpg" width="370" alt="фото раскрытой книги">
+            <h2>Издание Limited Edition</h2>
+            <p class="projects__text_filter">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-7.jpg" width="370" alt="ярлык на верёвке LAB EL TAG">
-              <h2>Проект LAB</h2>
-              <p class="projects__text_filter">Маркетинг</p>
+            <img src="images/our-project/img-7.jpg" width="370" alt="ярлык на верёвке LAB EL TAG">
+            <h2>Проект LAB</h2>
+            <p class="projects__text_filter">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
             <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
             </p>
-              <img src="images/our-project/img-8.jpg" width="370"
-                   alt="Рабочее место с ноутбуком очками истопками бумаг">
-              <h2>Growing Business</h2>
-              <p class="projects__text_filter">Приложение</p>
+            <img src="images/our-project/img-8.jpg" width="370"
+                 alt="Рабочее место с ноутбуком очками истопками бумаг">
+            <h2>Growing Business</h2>
+            <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
       </ul>
@@ -177,6 +190,8 @@
   </section>
 
   <footer class="footer">
+
+    <div class="container">
 
     <section class="footer__section_navigation">
       <h2>Навигация</h2>   <!--скрыть-->
@@ -223,6 +238,7 @@
         <button type="submit" class="footer__button_subsсribe">Подписаться</button>
       </form>
     </section>
+    </div>
   </footer>
 </main>
 </body>
