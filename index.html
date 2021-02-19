@@ -15,26 +15,25 @@
 <body class="body">
 
 <header class="header">
-  <div class="container">
-    <nav>
-      <ul class="item">
-        <li>
-          <a href="#" class="header-logo header__link link">
+  <div class="header__container container">
+
+      <a href="#" class="header-logo nav__link link">
             <span class="header-logo__span">Web</span>Studio
           </a>
-        </li>
-        <li>
-          <a href="#" class="header__link link active">
+      <nav>
+        <ul class="nav__list item">
+        <li class="nav__item">
+          <a href="#" class="nav__link link active">
             Студия
           </a>
         </li>
-        <li>
-          <a href="./index2.html" class="header__link link">
+        <li class="nav__item">
+          <a href="./index2.html" class="nav__link link">
             Портфолио
           </a>
         </li>
-        <li>
-          <a href="#" class="header__link link">
+        <li class="nav__item">
+          <a href="#" class="nav__link link">
             Контакты
           </a>
         </li>
@@ -64,7 +63,7 @@
   </section>
 
   <section class="features container">
-    <h2>Особенности</h2>      <!--скрыть--->
+    <h2 class="features-title">Особенности</h2>      <!--скрыть--->
     <ul class="features__list item">
       <li class="item">
         <img src="images/features/img-svg/feature-pic1.svg" width="270"
@@ -132,7 +131,7 @@
           Мобильные приложения
         </p>
       </li>
-      <li class="our-product__item">
+      <li class="our-product__item ">
         <img src="images/product-img/product-img3.jpg" width="370"
              alt="изображение монитора ">
         <p>
@@ -200,7 +199,7 @@
 
   <section class="regular-customers container">
     <h2>Постоянные клиенты</h2>
-    <ul class="item">
+    <ul class="regular-customers__list item">
       <li>
         <a href="#" class="link">
           <img src="images/our-partners/client1.png" width="170"
@@ -242,7 +241,7 @@
 
   <footer class="footer">
 
-    <div class="container">
+    <div class="footer__container container">
 
       <section class="footer__section_navigation">
 
@@ -254,12 +253,12 @@
           <ul class="item">
             <li>
               <a  href="https://goo.gl/maps/axRE5zmFLKqTCfMG6"
-                 class="footer-address__link link" target="_blank">
+                 class="footer-address__link_address link" target="_blank">
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
             <li>
-              <a href="mailto:info@example.com" class="footer__link_mail link">
+              <a href="mailto:info@example.com" class="footer-address__link_mail link">
                 info@example.com
               </a>
             </li>
@@ -287,7 +286,7 @@
         <h2>Подписка</h2>  <!--скрыть-->
         <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
         <form>
-          <input type="email" value="E-mail">
+          <input type="email" class="footer__input" value="E-mail">
           <button type="submit" class="footer__button_subsсribe">Подписаться</button>
         </form>
       </section>

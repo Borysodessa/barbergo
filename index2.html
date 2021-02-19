@@ -15,26 +15,25 @@
 <body class="body">
 
 <header class="header">
-  <div class="container">
+  <div class="header__container container">
+
+      <a href="./index.html" class="header-logo nav__link link">
+        <span class="header-logo__span">Web</span>Studio
+      </a>
     <nav>
-      <ul class="item">
-        <li>
-          <a href="#" class="header-logo header__link link">
-            <span class="header-logo__span">Web</span>Studio
-          </a>
-        </li>
-        <li>
-          <a href="#" class="header__link link">
+      <ul class="nav__list item">
+        <li class="nav__item">
+          <a href="./index.html" class="nav__link link">
             Студия
           </a>
         </li>
-        <li>
-          <a href="./index2.html" class="header__link link active">
+        <li class="nav__item">
+          <a href="#" class="nav__link link active">
             Портфолио
           </a>
         </li>
-        <li>
-          <a href="#" class="header__link link">
+        <li class="nav__item">
+          <a href="#" class="nav__link link">
             Контакты
           </a>
         </li>
@@ -42,12 +41,12 @@
     </nav>
 
     <ul class="user-nav__list item">
-      <li>
+      <li class="user-nav__item">
         <a href="mailto:info@example.com" class="user-nav__link link active">
           info@devstudio.com
         </a>
       </li>
-      <li>
+      <li class="user-nav__item">
         <a href="tel:+380991111111" class="user-nav__link link">
           +38 096 111 11 11
         </a>
@@ -61,10 +60,10 @@
   <section class="our-projects container">
     <h1 class="our-projects__title">Наши проэкты</h1>
 
-    <section class="section-filter">
+    <section class="filter">
       <ul class="filter__list item">
-        <li>
-          <button type="button" class="filter_active">Все</button>
+        <li class="filter_active">
+          <button type="button"  class="filter_active">Все</button>
         </li>
         <li>
           <button type="button">Веб-сайты</button>
@@ -75,8 +74,8 @@
         <li>
           <button type="button">Дизайн</button>
         </li>
-        <li>
-          <button type="button">Маркетинг</button>
+        <li class="filter__item_last">
+          <button type="button" >Маркетинг</button>
         </li>
       </ul>
     </section>
@@ -97,90 +96,97 @@
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
             <img src="images/our-project/img-1.jpg" width="370"
                  alt="изображение двух баскетболистов в прыжке">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Постер New Orlean vs Golden Star</h2>
             <p class="projects__text_filter">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-2.jpg" width="370" alt="постер рыбного ресторана">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Ресторан Seafood</h2>
             <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-3.jpg" width="370" alt="изображение наушников">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Проект Prime</h2>
             <p class="projects__text_filter">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-4.jpg" width="370" alt="фото двух коробок">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Проект Boxes</h2>
             <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-5.jpg" width="370" alt="фото монитора">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Inspiration has no Borders</h2>
             <p class="projects__text_filter">Веб-сайт</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-6.jpg" width="370" alt="фото раскрытой книги">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Издание Limited Edition</h2>
             <p class="projects__text_filter">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-7.jpg" width="370" alt="ярлык на верёвке LAB EL TAG">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Проект LAB</h2>
             <p class="projects__text_filter">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-            <p class="projects__text_hover">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
-            </p>
+
             <img src="images/our-project/img-8.jpg" width="370"
                  alt="Рабочее место с ноутбуком очками истопками бумаг">
+            <p class="projects__text_hover">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
             <h2>Growing Business</h2>
             <p class="projects__text_filter">Приложение</p>
           </a>
@@ -191,53 +197,55 @@
 
   <footer class="footer">
 
-    <div class="container">
+    <div class="footer__container container">
 
-    <section class="footer__section_navigation">
-      <h2>Навигация</h2>   <!--скрыть-->
-      <a href="#" class="footer__link_logo link">
-        <span class="footer__span_logo">Web</span> Studio
-      </a>
-      <address>
+      <section class="footer__section_navigation">
+
+        <h2>Навигация</h2>   <!--скрыть-->
+        <a href="#" class="footer__link_logo link">
+          <span class="footer__span_logo">Web</span> Studio
+        </a>
+        <address class="footer-address">
+          <ul class="item">
+            <li>
+              <a  href="https://goo.gl/maps/axRE5zmFLKqTCfMG6"
+                  class="footer-address__link_address link" target="_blank">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="footer-address__link_mail link">
+                info@example.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="footer__link_tel link">
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </section>
+
+      <section>
+        <h2>Социальные сети</h2>  <!--скрыть-->
+        <p class="footer__text_social">присоединяйтесь</p>
         <ul class="item">
-          <li>
-            <a href="https://goo.gl/maps/axRE5zmFLKqTCfMG6"
-               class="footer__link_address link" target="_blank">
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="footer__link_mail link">
-              info@example.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="footer__link_tel link">
-              +38 099 111 11 11
-            </a>
-          </li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
         </ul>
-      </address>
-    </section>
+      </section>
 
-    <section>
-      <h2>Социальные сети</h2>  <!--скрыть-->
-      <p class="footer__text_social">присоединяйтесь</p>
-      <ul class="item">
-        <li><a href="#" class="link"></a></li>
-        <li><a href="#" class="link"></a></li>
-        <li><a href="#" class="link"></a></li>
-        <li><a href="#" class="link"></a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Подписка</h2>  <!--скрыть-->
-      <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
-      <form>
-        <input type="email" value="E-mail">
-        <button type="submit" class="footer__button_subsсribe">Подписаться</button>
-      </form>
-    </section>
+      <section>
+        <h2>Подписка</h2>  <!--скрыть-->
+        <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
+        <form>
+          <input type="email" class="footer__input" value="E-mail">
+          <button type="submit" class="footer__button_subsсribe">Подписаться</button>
+        </form>
+      </section>
     </div>
   </footer>
 </main>

@@ -40,7 +40,11 @@
 
 .container{
     width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
+    border-left: 2px solid rgba(180, 180,180, 0.8);
+    border-right: 2px solid rgba(180, 180,180, 0.8);
 }
 
 .link {
