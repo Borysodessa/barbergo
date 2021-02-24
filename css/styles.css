@@ -10,7 +10,7 @@
     background-color: var(--first-background-color);
 }
 
-/*------------header---------*/
+/*===========header========*/
 
 .header{
     background-color: var(--first-background-color) ;
@@ -87,11 +87,41 @@
     letter-spacing: 0.02em;
 }
 
-/*-------------main index-------------*/
+.user-nav__link::before{
+    content:"";
+    display: inline-flex;
+    width: 21px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.user-nav__link.envelope::before{
+    background-image: url("../images/user-navigation/envelope (hover).svg");
+    right: 5px;
+
+}
+
+.user-nav__link.smartphone::before{
+    background-image: url("../images/user-navigation/smartphone.svg");
+    right: 5px;
+
+}
+    /*-------------main index-------------*/
 
 .hero{
-  background-color: #ece2e2;  /*временно*/
-    padding:  200px 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--hero-background-color);
+    height: 600px;
+
+    background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("../images/hero/hero-img.jpg");
 }
 
 .hero__title {
@@ -104,6 +134,7 @@
 
     width: 696px;
     margin: 0 auto 30px auto;
+    padding-top: 200px;
 }
 
 .hero__button{
@@ -137,7 +168,6 @@
 
 .features__list{
     display: flex;
-
     padding: 0;
 }
 
