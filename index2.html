@@ -17,18 +17,18 @@
 <header class="header">
   <div class="header__container container">
 
-      <a href="./index.html" class="header-logo nav__link link">
-        <span class="header-logo__span">Web</span>Studio
-      </a>
+    <a href="#" class="header-logo nav__link link">
+      <span class="header-logo__span">Web</span>Studio
+    </a>
     <nav>
       <ul class="nav__list item">
         <li class="nav__item">
-          <a href="./index.html" class="nav__link link">
+          <a href="#" class="nav__link link active">
             Студия
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link link active">
+          <a href="./index2.html" class="nav__link link">
             Портфолио
           </a>
         </li>
@@ -41,13 +41,19 @@
     </nav>
 
     <ul class="user-nav__list item">
-      <li class="user-nav__item">
-        <a href="mailto:info@example.com" class="user-nav__link link active">
+      <li>
+        <a href="mailto:info@example.com" class="user-nav__link link">
+          <svg class="user-nav__envelope">
+            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+          </svg>
           info@devstudio.com
         </a>
       </li>
-      <li class="user-nav__item">
-        <a href="tel:+380991111111" class="user-nav__link link">
+      <li>
+        <a href="tel:+380991111111" class="user-nav__link link smartphone">
+          <svg class="user-nav__phone">
+            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+          </svg>
           +38 096 111 11 11
         </a>
       </li>
@@ -195,59 +201,86 @@
     </section>
   </section>
 
-  <footer class="footer">
+<footer class="footer">
 
-    <div class="footer__container container">
+  <div class="footer__container container">
 
-      <section class="footer__section_navigation">
+    <section class="footer__navigation">
 
-        <h2>Навигация</h2>   <!--скрыть-->
-        <a href="#" class="footer__link_logo link">
-          <span class="footer__span_logo">Web</span> Studio
-        </a>
-        <address class="footer-address">
-          <ul class="item">
-            <li>
-              <a  href="https://goo.gl/maps/axRE5zmFLKqTCfMG6"
-                  class="footer-address__link_address link" target="_blank">
-                г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li>
-              <a href="mailto:info@example.com" class="footer-address__link_mail link">
-                info@example.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+380991111111" class="footer__link_tel link">
-                +38 099 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
-      </section>
-
-      <section>
-        <h2>Социальные сети</h2>  <!--скрыть-->
-        <p class="footer__text_social">присоединяйтесь</p>
+      <h2 class="visually-hidden">Навигация</h2>
+      <a href="#" class="footer__link_logo link">
+        <span class="footer__span_logo">Web</span> Studio
+      </a>
+      <address class="footer-address">
         <ul class="item">
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
-          <li><a href="#" class="link"></a></li>
+          <li>
+            <a href="https://goo.gl/maps/axRE5zmFLKqTCfMG6" class="footer-address__link_address link" target="_blank">
+              г. Киев, пр-т Леси Украинки, 26
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@example.com" class="footer-address__link_mail link">
+              info@example.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380991111111" class="footer__link_tel link">
+              +38 099 111 11 11
+            </a>
+          </li>
         </ul>
-      </section>
+      </address>
+    </section>
 
-      <section>
-        <h2>Подписка</h2>  <!--скрыть-->
-        <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
-        <form>
-          <input type="email" class="footer__input" value="E-mail">
-          <button type="submit" class="footer__button_subsсribe">Подписаться</button>
-        </form>
-      </section>
-    </div>
-  </footer>
+    <section class="footer-social__section">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <p class="footer__text_social">присоединяйтесь</p>
+      <ul class="footer-social__list item">
+        <li>
+          <a href="#" class="link">
+            <svg class="social__pic footer__social">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link">
+            <svg class="social__pic footer__social">
+              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link">
+            <svg class="social__pic footer__social">
+              <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link">
+            <svg class="social__pic footer__social">
+              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subscribe">
+      <h2 class="visually-hidden">Подписка</h2>
+      <p class="footer__text_subsсribe">Подпишитесь на рассылку</p>
+      <form>
+        <input type="email" class="footer__input" value="E-mail">
+        <button type="submit" class="footer__button_subsсribe">Подписаться
+          <svg class="subscribe__icon">
+            <use href="./images/symbol-defs.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
+    </section>
+  </div>
+</footer>
 </main>
 </body>
 </html>
