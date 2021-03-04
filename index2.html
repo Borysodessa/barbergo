@@ -91,109 +91,120 @@
       <ul class="projects__list item">
         <li>
           <a href="#" class="link">
-            <img src="images/our-project/img-0.1.jpg" width="370"
+            <div>
+             <img src="images/our-project/img-0.1.jpg" width="370"
                  alt="изображение ноутбука">
             <p class="projects__text_hover">Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак
               на защищённые сервера конкурентов.
             </p>
+          </div>
             <h2>Технокряк</h2>
             <p class="projects__text_filter">Веб-сайт</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
+            <div>
             <img src="images/our-project/img-1.jpg" width="370"
                  alt="изображение двух баскетболистов в прыжке">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Постер New Orlean vs Golden Star</h2>
             <p class="projects__text_filter">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
-            <img src="images/our-project/img-2.jpg" width="370" alt="постер рыбного ресторана">
+            <div>
+               <img src="images/our-project/img-2.jpg" width="370" alt="постер рыбного ресторана">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Ресторан Seafood</h2>
             <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
-            <img src="images/our-project/img-3.jpg" width="370" alt="изображение наушников">
+            <div>
+              <img src="images/our-project/img-3.jpg" width="370" alt="изображение наушников">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Проект Prime</h2>
             <p class="projects__text_filter">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
-            <img src="images/our-project/img-4.jpg" width="370" alt="фото двух коробок">
+            <div>
+          <img src="images/our-project/img-4.jpg" width="370" alt="фото двух коробок">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Проект Boxes</h2>
             <p class="projects__text_filter">Приложение</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
+            <div>
             <img src="images/our-project/img-5.jpg" width="370" alt="фото монитора">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Inspiration has no Borders</h2>
             <p class="projects__text_filter">Веб-сайт</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
-            <img src="images/our-project/img-6.jpg" width="370" alt="фото раскрытой книги">
+            <div>
+               <img src="images/our-project/img-6.jpg" width="370" alt="фото раскрытой книги">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Издание Limited Edition</h2>
             <p class="projects__text_filter">Дизайн</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
+            <div>
             <img src="images/our-project/img-7.jpg" width="370" alt="ярлык на верёвке LAB EL TAG">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Проект LAB</h2>
             <p class="projects__text_filter">Маркетинг</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-
-            <img src="images/our-project/img-8.jpg" width="370"
+            <div>
+              <img src="images/our-project/img-8.jpg" width="370"
                  alt="Рабочее место с ноутбуком очками истопками бумаг">
             <p class="projects__text_hover">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
           </p>
+        </div>
             <h2>Growing Business</h2>
             <p class="projects__text_filter">Приложение</p>
           </a>
@@ -201,6 +212,8 @@
       </ul>
     </section>
   </section>
+
+  
 
 <footer class="footer">
 
@@ -282,6 +295,25 @@
     </section>
   </div>
 </footer>
+
+<div class="modal-wrap is-hidden">
+    <section class="modal">
+      <h2 class="modal__title">
+        Оставьте свои данные, мы вам перезвоним
+      </h2>
+      <form >
+        <label for="modal-name" class="modal-name__label">имя</label>
+        <input class="modal-name__input" id="modal-name" type="text" value="Имя">
+        <input class="modal-tel__input" id="modal-tel" type="tel" value="Телефон">
+        <input class="modal-post__input" id="modal-post" type="email" value="Почта">
+        <textarea class="modal-coment__textarea">Комментарий</textarea>
+        <input class="modal-condition__check-box" type="checkbox" id="modal-check-box">
+        <label class="modal-condition__label" for="modal-check-box">Соглашаюсь
+           с рассылкой и принимаю <span>Условия договора</span></label>
+        <button class="modal-button" type="submit">отправить</button>
+      </form>
+    </section>
+</div>
 </main>
 </body>
 </html>
