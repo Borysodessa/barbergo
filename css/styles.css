@@ -74,7 +74,10 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+
+    transition-property: color;
+    transition-duration: 500ms ;
+    transition-timing-function: linear;
 }
 
 /*-----user navigation-----*/
@@ -97,12 +100,15 @@
 }
 
 .user-nav__link {
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--user-nav-color);
+
+    transition-property: color;
+    transition-duration: 500ms ;
+    transition-timing-function: linear;
 }
 
 .user-nav__link:hover, .nav__list a:hover{
@@ -329,8 +335,6 @@
     margin: 0;
 }
 
-
-
 /*-------our team----*/
 
 .our-team{
@@ -382,13 +386,12 @@
     margin: 0 0 16px 0;
 }
 
-.social__pic{
+.social__icon{
 fill:#AFB1B8;
-}
 
-.social__pic:hover{
-   fill: #ffffff;
-   
+transition-property: fill;
+    transition-duration: 600ms ;
+    transition-timing-function: linear;
 }
 
 .our-team__social{
@@ -400,18 +403,32 @@ fill:#AFB1B8;
 
 }
 
+.our-team__social li{
+    height:40px;
+}
+
 .our-team__social a{
     display: block;
     border-radius: 50%;
-    background-color: transparent;
+    height: 44px;
+    
     padding: 12px;
-    fill: #ffffff
+    background-color: transparent;
+    
+    transition-property: background-color;
+    transition-duration: 600ms ;
+    transition-timing-function: linear;
+}
+
+.our-team__social a:hover .social__icon{
+   fill: #ffffff;
 }
 
 .our-team__social a:hover{
    background-color: var(--social-background-hover);
-   
 }
+
+
 
 .our-team svg{
     width: 20px;
@@ -446,6 +463,10 @@ fill:#AFB1B8;
     margin-right: 30px;
     border: 1px solid var(--regular-customers-border-color);
     border-radius: 4px;
+
+      transition-property: border-color;
+    transition-duration: 1000ms ;
+    transition-timing-function: linear;
    }
 
 .regular-customers__list li:last-child{
@@ -454,6 +475,10 @@ fill:#AFB1B8;
 
 .regular-customers__logo{
     fill: var(--regular-customer-color);
+
+    transition-property: fill;
+    transition-duration: 500ms ;
+    transition-timing-function: linear;
 }
 
 .regular-customers__list a:hover{
@@ -499,7 +524,6 @@ fill:#AFB1B8;
 .our-projects__title{
     display: none;
 }
-
 
 /*========filter=======*/
 
@@ -567,7 +591,8 @@ fill:#AFB1B8;
 }
 
 .projects__list li:hover .projects__text_hover{
-opacity: 1;
+    opacity: 1;
+    transform: scale(1) ;
 }
 
 .projects__list li:nth-child(3n){
@@ -604,6 +629,10 @@ opacity: 1;
     padding: 24px 63px;
     margin: 0;
     bottom: 0;
+    
+    transform: scale(0.8);
+    transition:transform 500ms cubic-bezier(0.4, 0, 0.2, 1), 
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
   .projects__list div{
@@ -682,9 +711,14 @@ opacity: 1;
 }
 
 .footer-social__list li{
-padding: 12px;
-background-color: var(--footer-social-background);
-border-radius: 50%;
+    padding: 12px;
+    background-color: var(--footer-social-background);
+    border-radius: 50%;
+    height: 44px;
+
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
 }
 
 .footer-social__list li:hover{
@@ -695,7 +729,7 @@ background-color: var(--social-background-hover);
     fill: #ffffff;
     width: 20px;
     height:20px;
-    }
+}
 
 .footer__input{
     font-family: Roboto;
@@ -784,8 +818,19 @@ background-color:var(--secondary-color);
     width: 100%;
     height: 40px;
     border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
     margin-bottom: 28px;
-    padding:0
+    padding: 0;
+
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.modal-name__input:hover, 
+.modal-tel__input:hover,
+ .modal-post__input:hover{
+    border: 1px solid var(--modal-accent-color);
 }
 
 .modal-name__label{
@@ -796,7 +841,16 @@ background-color:var(--secondary-color);
     width: 448px;
     height:120px;
     border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
     margin-bottom: 20px;
+
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.modal-coment__textarea:hover{
+    border: 1px solid var(--modal-accent-color); 
 }
 
 .modal-condition__label{
