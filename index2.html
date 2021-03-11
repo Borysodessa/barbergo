@@ -294,6 +294,8 @@
     </section>
   </div>
 </footer>
+ 
+/* ====== modal ====== */
 
 <div class="modal-wrap is-hidden">
     <section class="modal">
@@ -301,10 +303,31 @@
         Оставьте свои данные, мы вам перезвоним
       </h2>
       <form >
-        <label for="modal-name" class="modal-name__label">имя</label>
+
+        <span>
+          <svg class="modal-name__svg">
+            <use href="./images/symbol-defs.svg#modal-name-icon">
+            </use>
+          </svg>
+        </span>
         <input class="modal-name__input" id="modal-name" type="text" value="Имя">
+        
+        <span>
+          <svg class="modal-tel__svg">
+            <use href="./images/symbol-defs.svg#modal-phone-icon">
+            </use>
+          </svg>
+        </span>
         <input class="modal-tel__input" id="modal-tel" type="tel" value="Телефон">
+        
+        <span>
+          <svg class="modal-post__svg">
+            <use href="./images/symbol-defs.svg#modal-post-icon">
+            </use>
+          </svg>
+        </span>
         <input class="modal-post__input" id="modal-post" type="email" value="Почта">
+        
         <textarea class="modal-coment__textarea">Комментарий</textarea>
         <input class="modal-condition__check-box" type="checkbox" id="modal-check-box">
         <label class="modal-condition__label" for="modal-check-box">Соглашаюсь
