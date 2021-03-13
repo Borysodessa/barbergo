@@ -295,40 +295,57 @@
   </div>
 </footer>
  
-/* ====== modal ====== */
+<!-----====== modal ======----->
 
-<div class="modal-wrap is-hidden">
+<div class="modal-wrap">
     <section class="modal">
+
+<span class="modal-close__span">
+  <svg class="modal-close__svg">
+    <use href="./images/symbol-defs.svg#icon-modal-close">
+    </use>
+  </svg>
+</span>
+
       <h2 class="modal__title">
         Оставьте свои данные, мы вам перезвоним
       </h2>
+
       <form >
 
-        <span>
-          <svg class="modal-name__svg">
+        <div class="modal-name__wrap">
+        <input class="modal-name__input" id="modal-name" 
+        type="text" name="name" autocomplete="off" placeholder=" ">
+        <label class="modal-name__label" for="modal-name">Имя</label>
+        <svg class="modal-name__svg">
             <use href="./images/symbol-defs.svg#modal-name-icon">
             </use>
           </svg>
-        </span>
-        <input class="modal-name__input" id="modal-name" type="text" value="Имя">
         
-        <span>
-          <svg class="modal-tel__svg">
+        </div>
+        
+        <div class="modal-tel__wrap">
+        <input class="modal-tel__input" id="modal-tel" name="tel" 
+        type="tel" placeholder=" ">
+        <label class="modal-tel__label" for="modal-tel">Телефон</label>
+        <svg class="modal-tel__svg">
             <use href="./images/symbol-defs.svg#modal-phone-icon">
             </use>
-          </svg>
-        </span>
-        <input class="modal-tel__input" id="modal-tel" type="tel" value="Телефон">
-        
-        <span>
-          <svg class="modal-post__svg">
+        </svg>
+        </div>
+
+       <div class="modal-post__wrap">
+        <input class="modal-post__input" id="modal-post" type="email"
+         name="post" placeholder=" ">
+         <label class="modal-post__label" for="modal-post">Почта</label>
+         <svg class="modal-post__svg">
             <use href="./images/symbol-defs.svg#modal-post-icon">
             </use>
           </svg>
-        </span>
-        <input class="modal-post__input" id="modal-post" type="email" value="Почта">
-        
-        <textarea class="modal-coment__textarea">Комментарий</textarea>
+       </div>
+
+        <textarea class="modal-coment__textarea" id="modal-coment" placeholder="Комментарий"></textarea>
+        <label for="modal-coment"></label>
         <input class="modal-condition__check-box" type="checkbox" id="modal-check-box">
         <label class="modal-condition__label" for="modal-check-box">Соглашаюсь
            с рассылкой и принимаю <span>Условия договора</span></label>

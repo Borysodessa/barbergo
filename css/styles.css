@@ -38,7 +38,6 @@
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    
 }
 
 /*-------main navigation-----*/
@@ -119,7 +118,6 @@
 .user-nav__link:hover .user-nav__phone{
    fill: var(--accent-color);
 }
-
 
 .active{
     position: relative;
@@ -217,9 +215,7 @@
 }
 
 .features__list li{
-    
     margin-right: 30px;
-    
 }
 
 .features__list li:last-child{
@@ -244,7 +240,6 @@
     margin-bottom: 25px;
     margin-left: 100px;
     margin-right: 100px;
-    
 }
 
 .features__list h3{
@@ -278,7 +273,6 @@
 .our-product__list{
     display: flex;
     padding: 0;
-    
 }
 
 .our-product__title, .our-team__title, .regular-customers__title{
@@ -387,9 +381,9 @@
 }
 
 .social__icon{
-fill:#AFB1B8;
+    fill:#AFB1B8;
 
-transition-property: fill;
+    transition-property: fill;
     transition-duration: 600ms ;
     transition-timing-function: linear;
 }
@@ -464,7 +458,7 @@ transition-property: fill;
     border: 1px solid var(--regular-customers-border-color);
     border-radius: 4px;
 
-      transition-property: border-color;
+    transition-property: border-color;
     transition-duration: 1000ms ;
     transition-timing-function: linear;
    }
@@ -807,6 +801,22 @@ padding: 40px;
 background-color:var(--secondary-color);
 }
 
+.modal-close__svg{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--modal-close-border-color);
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.modal-close__svg:hover{
+ fill:var(--modal-close-hover);
+}
+
 .modal__title{
   margin-bottom: 30px;
   margin-top: 0;
@@ -818,8 +828,10 @@ background-color:var(--secondary-color);
   color: var(--title-color);
 }
 
-.modal-name__input, .modal-tel__input, .modal-post__input{
-   margin-bottom: 28px;
+.modal-name__input,
+.modal-tel__input,
+.modal-post__input{
+   
    padding-left: 42px;
     transition-property: border;
     transition-duration: 500ms;
@@ -834,37 +846,66 @@ background-color:var(--secondary-color);
     letter-spacing: 0.01em;
 }
 
-.modal-name__input:hover, 
-.modal-tel__input:hover,
-.modal-post__input:hover{
+.modal-name__input:hover,:focus, 
+.modal-tel__input:hover,:focus,
+.modal-post__input:hover,:focus{
     border: 1px solid var(--modal-accent-color);
+    color: var(accent-color);
+    padding-left: 42px;
+    outline: none;
 }
 
-.modal-name__svg, .modal-tel__svg, .modal-post__svg{
+.modal-name__wrap, 
+.modal-tel__wrap, 
+.modal-post__wrap{
+    position: relative;
+    background-color: #e2cece;
+    margin-bottom: 28px;
+}
+
+.modal-name__wrap label,
+.modal-tel__wrap label, 
+.modal-post__wrap label{
     position: absolute;
-    width: 18px;
-    height: 18px;
-    left: 56px; 
+    top:50%;
+    left: 42px;
+    transform: translateY(-50%);
+    
 }
 
-.modal-tel__svg{
-    top: 172px
+.modal-name__input:focus + .modal-name__label,
+.modal-name__input:not(:placeholder-shown) + .modal-name__label,
+.modal-tel__input:focus + .modal-tel__label,
+.modal-tel__input:not(:placeholder-shown) + .modal-tel__label,
+.modal-post__input:focus + .modal-post__label,
+.modal-post__input:not(:placeholder-shown) + .modal-post__label{
+    transform: translateY(-50%);
+    top: -30%;
+    left: 17px;
+    color: var(--accent-color);
 }
 
+.modal-name__input:focus ~ .modal-name__svg,
+.modal-tel__input:focus ~ .modal-tel__svg,
+.modal-post__input:focus ~ .modal-post__svg{
+  fill: var(--accent-color);  
+}
+
+.modal-name__svg, 
+.modal-tel__svg, 
 .modal-post__svg{
-    top: 240px;
-}
-
-.modal-name__svg{
     position: absolute;
     width: 18px;
     height: 18px;
-    top: 104px;
-    left: 56px; 
+    left: 16px; 
+    top:50%;
+    transform: translateY(-50%);
 }
 
-.modal-name__label{
-    display: none;
+.modal-name__svg:hover,:focus,
+.modal-tel__svg:hover,:focus,
+.modal-post__svg:hover,:focus{
+    fill: #2196F3;
 }
 
 .modal-coment__textarea{
@@ -874,19 +915,19 @@ background-color:var(--secondary-color);
     border-radius: 4px;
     margin-bottom: 20px;
     padding-left: 16px;
+    outline: none;
 
     transition-property: border;
     transition-duration: 500ms;
     transition-timing-function: linear;
  
     font-size: 14px;
-
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.01em;
 }
 
-.modal-coment__textarea:hover{
+.modal-coment__textarea:hover,:focus{
     border: 1px solid var(--modal-accent-color); 
 }
 
