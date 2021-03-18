@@ -1,0 +1,56 @@
+.html {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--first-background-color);
+  margin-top: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.item {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+.button {
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+  border: none;
+}/*# sourceMappingURL=main.css.map */
