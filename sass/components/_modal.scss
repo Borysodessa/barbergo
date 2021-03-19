@@ -1,0 +1,195 @@
+.modal-wrap{
+    position: fixed;
+    top: 0;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    background-color: $modal-wrap-background;
+
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    
+    border-radius: 4px;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    
+    background-color: $secondary-color;
+}
+
+.modal-close__svg{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $modal-close-border-color;
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    padding: 4px;
+
+    :hover{
+        fill: $modal-close-hover;
+    }
+}
+.modal__title{
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-color;
+  }
+
+.modal-name__input,
+.modal-tel__input,
+.modal-post__input{
+   
+   padding-left: 42px;
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-timing-function: linear; width: 100%;
+    height: 40px;
+    border: 1px solid $modal-border-color;
+    border-radius: 4px;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+}
+
+.modal-name__input:hover,:focus, 
+.modal-tel__input:hover,:focus,
+.modal-post__input:hover,:focus{
+    border: 1px solid $modal-accent-color;
+    color: $accent-color;
+    padding-left: 42px;
+    outline: none;
+}
+
+.modal-name__wrap, 
+.modal-tel__wrap, 
+.modal-post__wrap{
+    position: relative;
+    background-color: #e2cece;
+    margin-bottom: 28px;
+}
+
+.modal-name__wrap label,
+.modal-tel__wrap label, 
+.modal-post__wrap label{
+    position: absolute;
+    top:50%;
+    left: 42px;
+    transform: translateY(-50%);
+    
+}
+
+.modal-name__input:focus + .modal-name__label,
+.modal-name__input:not(:placeholder-shown) + .modal-name__label,
+.modal-tel__input:focus + .modal-tel__label,
+.modal-tel__input:not(:placeholder-shown) + .modal-tel__label,
+.modal-post__input:focus + .modal-post__label,
+.modal-post__input:not(:placeholder-shown) + .modal-post__label{
+    transform: translateY(-50%);
+    top: -30%;
+    left: 17px;
+    color: $accent-color;
+}
+
+.modal-name__input:focus ~ .modal-name__svg,
+.modal-tel__input:focus ~ .modal-tel__svg,
+.modal-post__input:focus ~ .modal-post__svg{
+  fill: accent-color;  
+}
+
+.modal-name__svg, 
+.modal-tel__svg, 
+.modal-post__svg{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 16px; 
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.modal-name__svg:hover,:focus,
+.modal-tel__svg:hover,:focus,
+.modal-post__svg:hover,:focus{
+    fill: $accent-color;
+}
+
+.modal-coment__textarea{
+    width: 448px;
+    height:120px;
+    border: 1px solid $modal-border-color;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    outline: none;
+
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+ 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+
+.modal-coment__textarea:hover,:focus{
+    border: 1px solid $modal-accent-color; 
+}
+
+.modal-condition__label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+}
+
+.modal-condition__label span{
+    color: $modal-condition-span;
+    text-decoration: underline;
+}
+
+.modal-condition__check-box{
+    margin-bottom: 30px;
+}
+
+.modal-button{
+    margin: 0 auto;
+    
+    display: block;
+    width: 200px;
+    height: 50px;  
+    border-radius: 4px;
+    border: 1px solid transparent;
+  
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $secondary-color;
+    background-color: $modal-button-background;
+  
+}
+
+    
