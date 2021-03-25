@@ -4,7 +4,8 @@
 @import "./utils/link";
 @import "./utils/item";
 @import "./utils/visually-hidden";
-@import "./utils/container";
+@import "./utils/is-close";
+@import "./components/burger-button";
 @import "./base/base";
 @import "./components/header";
 @import "./components/header-logo";
@@ -23,3 +24,5 @@
 @import "./components/footer-social";
 @import "./components/footer-subscribe";
 @import "./components/modal";
+
+@import "./utils/container";

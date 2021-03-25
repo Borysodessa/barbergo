@@ -1,3 +1,8 @@
+@media screen and(max-width: 480px){
+
+}
+
+@media screen and(min-width:1260px){
 .our-team{
     padding: 94px 0;
     background-color: $dirty-section-background-color;
@@ -94,4 +99,5 @@
     transition-property: fill;
     transition-duration: 600ms ;
     transition-timing-function: linear;
+}
 }

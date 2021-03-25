@@ -1,3 +1,30 @@
+@media screen and(max-width: 480px){
+  .features{
+    padding: 0 15px;
+  }
+
+.features__wrap{
+    width: 270px;
+    background-color: $features-wrap-background;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features__list{
+    margin: 0;
+    padding: 0;
+}
+
+.features__list li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  max-width: 480px;
+}
+}
+
+@media screen and(min-width: 1260px){
 .features{
     padding: 94px 15px;
 }
@@ -44,10 +71,12 @@
   }
 
 }
-
 .features__wrap{
     width: 270px;
     background-color: $features-wrap-background;
     border-radius: 4px;
     margin-bottom: 30px;
+}
+
+
 }

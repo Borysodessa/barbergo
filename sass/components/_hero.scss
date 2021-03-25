@@ -1,3 +1,5 @@
+@media screen and(min-width: 1260px){
+
 .hero{
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +14,7 @@
     url("../images/hero/hero-img.jpg");
     
     &__title{
-        font-size: 44px;
+    font-size: 44px;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.06em;
@@ -41,4 +43,18 @@
         border: 1px solid transparent;
         border-radius: 4px;
     }
+}
+}
+
+
+@media screen and(max-width: 480px){
+   .hero__title{
+       font-size: 26px;
+       margin-right: 60px;
+       margin-left: 60px;
+   }
+
+   .hero{
+       background-size: cover;
+   }
 }
