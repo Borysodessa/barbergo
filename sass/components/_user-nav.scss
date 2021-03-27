@@ -1,6 +1,4 @@
-.nav__list a, .user-nav__list {
-        display: none;
-}
+
 
 @media screen and(min-width: 1260px){
 .user-nav__list{
@@ -30,6 +28,7 @@
     transition-property: color;
     transition-duration: 500ms ;
     transition-timing-function: linear;
+   
 }
 
 .user-nav__link:hover, .nav__list a:hover{

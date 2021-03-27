@@ -1,10 +1,16 @@
-@media screen and(max-width: 480px){
+
   .features{
-    padding: 0 15px;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 44px;
+    background-color: rgb(250, 244, 235);
   }
 
+ 
+
 .features__wrap{
-    width: 270px;
+    width: 100%;
     background-color: $features-wrap-background;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -22,7 +28,12 @@
   
   max-width: 480px;
 }
+
+.features__icon{
+  display: block;
+  margin: 0 auto;
 }
+
 
 @media screen and(min-width: 1260px){
 .features{
@@ -71,12 +82,11 @@
   }
 
 }
-.features__wrap{
+
+  .features__wrap{
     width: 270px;
     background-color: $features-wrap-background;
     border-radius: 4px;
     margin-bottom: 30px;
-}
-
-
+  }
 }

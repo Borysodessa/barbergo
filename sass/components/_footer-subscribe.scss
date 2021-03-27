@@ -1,24 +1,19 @@
-
-@media screen and(min-width: 1260px){
-
-
-
-
 .footer__input{
     font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.25;
-letter-spacing: 0.03em;
-text-align: left;
-background-color: $footer-input-border-background;
-color: $footer-input-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: left;
+    background-color: $footer-input-border-background;
+    color: $footer-input-color;
 
     height: 50px;
     width: 342px;
     border-radius: 4px;
     border: 1px solid $footer-input-border;
     padding-left: 16px;
+    margin-bottom: 20px;
 }
 
 .footer__button_subsсribe{
@@ -47,5 +42,4 @@ color: $footer-input-color;
     height: 24px;
    vertical-align: middle;
    margin-left: 10px;
-}
 }

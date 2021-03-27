@@ -1,19 +1,18 @@
-@media screen and(min-width: 1260px ){
-
-
 
 .footer{
-    background-color: $footer-background-color;
+   text-align: center;
+    
     padding: 60px 0;
-
-    &__container{
-        display: flex;
-        justify-content: space-between;
-    }
 
     &__link_logo{
         margin: 0 0 20px 0;
-       color: $secondary-color;
+        color: $secondary-color;
+        text-align: center;
+        
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.03em;
     }
 
     &__span_logo{
@@ -56,6 +55,27 @@
         color: $secondary-color;
         margin: 0 0 20px 0;
     }
+}
+
+
+@media screen and(min-width: 1260px ){
+.footer{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+}
+
+
+
+
     
-}
-}
+   
+
+
+    
+    
+   
+    
+    

@@ -3,10 +3,14 @@
     color: $accent-color;
 }
 
-.header .header-logo--link {
+.header-logo--link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     font-family: Raleway, sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    color: $title-color;
 }
