@@ -1,0 +1,39 @@
+
+
+.footer-social__section{
+    padding-top: 60px;
+}
+
+.footer__social{
+   
+    width: 20px;
+    height:20px; 
+    fill: #ffffff;
+   
+}
+
+.footer-social__list{
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    padding: 0;
+    padding-bottom: 60px;
+    margin:0 auto;
+    
+    li{
+        padding: 12px;
+        background-color: $footer-social-background;
+        border-radius: 50%;
+        height: 44px;
+    
+        transition-property: background-color;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+    }
+
+    li:hover{
+        background-color: $social-background-hover;
+    }
+
+
+}

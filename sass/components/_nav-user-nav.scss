@@ -1,0 +1,12 @@
+
+
+@media screen and(min-width: 1260px){
+.nav__link, .user-nav__link {
+    display: inline-block;
+    color: $title-color;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+}
