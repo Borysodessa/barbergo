@@ -38,24 +38,7 @@
     fill: $accent-color;
   }
 
-  .active {
-    position: relative;
-    color: $accent-color;
-  }
-
-  .active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-
-    background-color: $accent-color;
-    color: $accent-color;
-  }
+  
 
   .user-nav__envelope,
   .user-nav__phone {
