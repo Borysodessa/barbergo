@@ -1,6 +1,7 @@
 .regular-customers{
     padding-top: 60px;
     padding-bottom: 30px;
+    overflow: hidden;
     
     h2{
         margin: 0 0 30px 0;
@@ -22,6 +23,7 @@
         margin-top: 0;
         margin-bottom: 0;;
         padding-left: 0;
+        overflow: hidden;
     }
 
     &__list li{
@@ -38,10 +40,13 @@
         margin-right: 30px;
         border: 1px solid $regular-customers-border-color;
         border-radius: 4px;
+        padding-left: 0;
+        overflow: hidden;
     
         transition-property: border-color;
         transition-duration: 1000ms ;
         transition-timing-function: linear;
+
     }
     
     &__logo{
