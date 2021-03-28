@@ -1,4 +1,16 @@
+.nav__link {
+    margin: 0;
 
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $nav-link-col;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+  }
 
 @media screen and(min-width: 1260px) {
   .nav__list {
@@ -17,15 +29,5 @@
     }
   }
 
-  .nav__link {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition-property: color;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-  }
+  
 }
