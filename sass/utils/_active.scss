@@ -1,6 +1,7 @@
 .active {
     position: relative;
     color: $accent-color;
+    padding-bottom: 8px;
   }
 
   .active::after {
