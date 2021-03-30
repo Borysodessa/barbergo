@@ -2,9 +2,16 @@
    max-width: 480px;
    padding-right: 15px;
    padding-left: 15px;
-   
+   background-color: $container-background;
+   overflow: hidden;
 }
 
+
+@media screen and(min-width: 480px){
+    .container{
+        max-width: 1200px;
+   }
+}
 
 
 @media screen and(min-width: 1260px){

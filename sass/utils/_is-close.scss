@@ -1,3 +1,10 @@
 .is-close{
     display: none;
 }
+
+@media screen and(min-width: 700px){
+    .is-close{
+    display: block;
+   
+}
+}

@@ -1,5 +1,5 @@
 .nav__link {
-  display: block;
+ 
    margin-bottom: 40px;
     
 
@@ -21,6 +21,22 @@
 
     padding-left: 0; 
   }
+
+  @media screen and(min-width: 700px){
+    .nav__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+          width:90%;
+        }
+
+       
+  }
+
+
+}
 
 @media screen and(min-width: 1260px) {
   .nav__list {

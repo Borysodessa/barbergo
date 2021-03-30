@@ -27,3 +27,10 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+
+@media screen and(min-width:700px){
+  .burger-button {
+    display:none;
+  }
+  }

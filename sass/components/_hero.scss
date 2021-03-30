@@ -1,25 +1,18 @@
+.hero {
+  padding-top: 108px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--hero-background-color);
+  height: 392px;
 
-.hero__title{
-       font-size: 26px;
-       margin-right: 60px;
-       margin-left: 60px;
-}
-
-   .hero{
-       padding-top: 108px;
-   background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--hero-background-color);
-    height: 392px;
-
-    background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.5),
-    rgba(0,0,0,0.5)
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url("../images/hero/hero-img.jpg");
-    
-    &__title{
+
+  &__title {
     font-size: 26px;
     font-weight: 900;
     line-height: 60px;
@@ -28,30 +21,27 @@
     text-align: center;
 
     width: 360px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 0;
     margin-bottom: 30px;
-    
-    
-    }
-    
-    &__button{
-        display: block;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-    
-        cursor: pointer;
-        color: $button-color;
-        background-color: $button-background-color;
-    
-        margin: 0 auto;
-        width: 200px;
-        height: 50px;
-        border: 1px solid transparent;
-        border-radius: 4px;
-    }
-   }
+  }
 
+  &__button {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    color: $button-color;
+    background-color: $button-background-color;
+
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+}

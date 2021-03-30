@@ -1,18 +1,25 @@
 
 
 
-@media screen and(min-width: 1260px){
+
 .filter{
+    padding-top: 60px;
     padding-bottom: 25px;
 }
 
 .filter__list{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+    padding-left: 0;
 
     li{
         background-color: $filter__button-background-color;
         margin-right: 8px;
+        margin-bottom: 15px;
         border-radius: 4px;padding-top: 6px;
         padding-bottom: 6px;
         padding-left: 22px;
@@ -43,4 +50,10 @@
     }
 
 }
+
+@media screen and (min-width: 700px) {
+    .filter__list{
+        display: flex;
+        justify-content: center;
+    }
 }
