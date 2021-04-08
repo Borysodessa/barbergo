@@ -3,7 +3,7 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 44px;
-  background-color: rgb(250, 244, 235);
+
 }
 
 .features__wrap {
@@ -15,8 +15,8 @@
 
 .features__list {
   display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -29,7 +29,7 @@
   max-width: 480px;
 }
 
-@media screen and(min-width:700px) {
+@media screen and(min-width:768px) {
   .features__list {
     display: flex;
     justify-content: space-around;
@@ -52,12 +52,14 @@
 @media screen and(min-width: 1260px) {
   .features {
     padding: 94px 15px;
+   
   }
 
   .features__list {
     display: flex;
+    flex-wrap: nowrap;
     padding: 0;
-
+    margin-right: 0;
     li {
       margin-right: 30px;
     }

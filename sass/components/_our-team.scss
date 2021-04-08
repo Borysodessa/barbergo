@@ -3,6 +3,7 @@
   padding-bottom: 60px;
   background-color: $dirty-section-background-color;
   overflow: hidden;
+
   h3 {
     font-size: 16px;
     font-weight: 500;
@@ -114,6 +115,19 @@
 
     &__list img {
       margin: 0 0 30px 0;
+    }
+
+   &__list{
+   flex-wrap: nowrap;
+   }
+
+    li{
+      width: 270px;
+    }
+
+    .our-team__social{
+      margin-right: 32px;
+      margin-left: 32px;
     }
   }
 }

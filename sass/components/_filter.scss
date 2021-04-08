@@ -1,59 +1,55 @@
-
-
-
-
-.filter{
-    padding-top: 60px;
-    padding-bottom: 25px;
+.filter {
+  padding-top: 60px;
+  padding-bottom: 25px;
 }
 
-.filter__list{
+.filter__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+
+  li {
+    background-color: $filter__button-background-color;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  button {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    color: $filter__button-color;
+    border: none;
+    background-color: $filter__button-background-color;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  .filter__item_last {
+    margin-right: 0;
+  }
+
+  .filter_active {
+    color: $filter__button_active-color;
+    background-color: $filter__button_active-background-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__list {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-    margin-top: 0;
-    margin-bottom: 0;
-   
-    padding-left: 0;
-
-    li{
-        background-color: $filter__button-background-color;
-        margin-right: 8px;
-        margin-bottom: 15px;
-        border-radius: 4px;padding-top: 6px;
-        padding-bottom: 6px;
-        padding-left: 22px;
-        padding-right: 22px;  
-    }
-
-    button{
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.63;
-        color: $filter__button-color;
-        border: none;
-        background-color: $filter__button-background-color;
-    }
-
-    li:last-child{
-        margin-right: 0;
-    }
-
-    .filter__item_last{
-        margin-right: 0;
-    }
-
-    .filter_active {
-        color: $filter__button_active-color;
-        background-color: $filter__button_active-background-color;
-    }
-
-}
-
-@media screen and (min-width: 700px) {
-    .filter__list{
-        display: flex;
-        justify-content: center;
-    }
+    justify-content: center;
+  }
 }

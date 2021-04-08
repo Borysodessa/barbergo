@@ -1,7 +1,7 @@
 .active {
     position: relative;
     color: $accent-color;
-    padding-bottom: 8px;
+   
   }
 
   .active::after {
@@ -16,4 +16,19 @@
 
     background-color: $accent-color;
     color: $accent-color;
+  }
+
+@media screen and(min-width: 768px){
+.active::after{
+      content:"";
+      bottom: -43px;
+    }
+}
+
+
+  @media screen and(min-width: 1260px){
+    .active::after{
+      content:"";
+      bottom: -6px;
+    }
   }
