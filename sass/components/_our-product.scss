@@ -6,6 +6,7 @@
 
 @media screen and(min-width: 1260px){
 .our-product{
+    display: block;
     padding-bottom: 94px;
 
     h2{
@@ -15,6 +16,7 @@
     &__list{
         display: flex;
         padding: 0;
+        margin-right: -30px;
     } 
 
     &__list .last-product{
