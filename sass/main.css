@@ -1238,6 +1238,22 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
+  .subscribe-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .subscribe-form .footer__input {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
 .modal-wrap {
   position: fixed;
   top: 0;
