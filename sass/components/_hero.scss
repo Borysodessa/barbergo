@@ -45,3 +45,14 @@
     border-radius: 4px;
   }
 }
+@media screen and (min-device-pixel-ratio: 2),
+screen and(min-resolution: 192dpi),
+screen and(min-resolution: 2dppx){
+  .hero{
+    background-image:linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../images/hero/hero-img2x.jpg");
+  }
+}
