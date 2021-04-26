@@ -38,9 +38,11 @@
 }
 
 .header-wrap {
+  display: none;
   position: absolute;
   top: 61px;
   left: 0;
+  z-index: 10;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -114,11 +116,11 @@ img {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,21 +203,6 @@ img {
   }
 }
 
-.nav__link {
-  margin-bottom: 40px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #212121;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,6 +215,21 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 0;
+}
+
+.nav__list li {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -434,8 +436,6 @@ img {
 
 .features {
   padding-top: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 44px;
 }
 
@@ -1502,7 +1502,7 @@ img {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -1511,13 +1511,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1260px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -1551,5 +1551,9 @@ img {
     content: "";
     bottom: -5px;
   }
+}
+
+.is-open {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

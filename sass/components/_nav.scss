@@ -1,4 +1,12 @@
-.nav__link {
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 0;
+
+
+li {
   margin-bottom: 40px;
 
   font-size: 14px;
@@ -11,14 +19,8 @@
   transition-duration: 200ms;
   transition-timing-function: linear;
 }
-
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-left: 0;
 }
+
 
 @media screen and(min-width: 768px) {
   .nav__list {
