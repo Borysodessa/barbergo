@@ -23,7 +23,7 @@
     height: 44px;
 
     transition-property: background-color;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
     transition-timing-function: linear;
   }
 
@@ -36,5 +36,9 @@
   .footer-social__section {
     padding-top: 0;
    margin-left: 69px;
+  }
+  
+  .footer-social__list{
+    padding-bottom: 0;
   }
 }

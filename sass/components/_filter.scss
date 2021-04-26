@@ -1,14 +1,11 @@
-.filter {
-  padding-top: 60px;
-  padding-bottom: 25px;
-}
+
 
 .filter__list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 
   padding-left: 0;
 
@@ -21,6 +18,10 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
   }
 
   button {
@@ -31,6 +32,10 @@
     color: $filter__button-color;
     border: none;
     background-color: $filter__button-background-color;
+
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
   }
 
   li:last-child {
@@ -41,7 +46,7 @@
     margin-right: 0;
   }
 
-  .filter_active {
+  li:hover button, li:hover {
     color: $filter__button_active-color;
     background-color: $filter__button_active-background-color;
   }

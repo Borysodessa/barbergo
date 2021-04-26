@@ -1,5 +1,5 @@
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -8,13 +8,13 @@
 
 @media screen and(min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and(min-width: 1260px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
   }
 }

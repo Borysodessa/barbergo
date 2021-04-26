@@ -18,16 +18,17 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        
         margin-right: -30px;
         margin-top: 0;
-        margin-bottom: 0;;
+        margin-bottom: -30px;
+        
         padding-left: 0;
         overflow: hidden;
     }
 
     &__list li{
         margin-bottom: 30px;
+        margin-right: 30px;
     }
     
     &__list a{ 
@@ -37,16 +38,15 @@
     
         width: 170px;
         height: 90px;
-        margin-right: 30px;
+        
         border: 1px solid $regular-customers-border-color;
         border-radius: 4px;
         padding-left: 0;
         overflow: hidden;
     
         transition-property: border-color;
-        transition-duration: 1000ms ;
+        transition-duration: 200ms ;
         transition-timing-function: linear;
-
     }
     
     &__logo{
@@ -101,15 +101,10 @@
 
 
 @media screen and(min-width: 1260px){
-    
-.regular-customers{
+    .regular-customers{
     padding-top: 94px;
     padding-bottom: 94px;
-
-    &__list li:last-child{
-        margin-right: 0;
-    }
-}
+ }
 }
 
     
