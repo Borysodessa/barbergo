@@ -38,9 +38,8 @@
 }
 
 .header-wrap {
-  display: none;
   position: absolute;
-  top: 61px;
+  top: 500px;
   left: 0;
   z-index: 10;
   width: 100%;
@@ -185,6 +184,13 @@ img {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .header-logo--link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1260px) {
   .header-logo--link {
     margin-right: 85px;
@@ -218,7 +224,6 @@ img {
 }
 
 .nav__list li {
-  margin-bottom: 40px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
@@ -248,6 +253,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 81px;
+    margin-bottom: 0;
   }
   .nav__list li {
     margin-right: 50px;
@@ -1017,6 +1023,11 @@ img {
   padding-right: 24px;
 }
 
+.projects-list__wrap:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 @media screen and (min-width: 768px) {
   .projects__list {
     display: -webkit-box;
@@ -1554,6 +1565,6 @@ img {
 }
 
 .is-open {
-  display: block;
+  top: 61px;
 }
 /*# sourceMappingURL=main.css.map */

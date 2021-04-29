@@ -7,7 +7,7 @@
 
 
 li {
-  margin-bottom: 40px;
+  
 
   font-size: 14px;
   font-weight: 500;
@@ -29,6 +29,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     margin-left: 81px;
+    margin-bottom: 0;
 
     li{
       margin-right: 50px;
@@ -38,7 +39,7 @@ li {
       margin-right: 0;
     }
   }
-}
+  }
 
 @media screen and(min-width: 1260px) {
   .nav__list {
