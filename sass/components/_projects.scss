@@ -53,7 +53,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  .name-card {
+  h2 {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -69,6 +69,7 @@
 .projects-list__wrap {
   border: 1px solid $project-border-color;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .projects-list__wrap:hover {
@@ -90,8 +91,9 @@
     }
 
     .name-card {
-      width: 300px;
-      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
     }
   }
 }

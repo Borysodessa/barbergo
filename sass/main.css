@@ -281,6 +281,7 @@ img {
   }
   .nav__list .nav__link {
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -1011,7 +1012,7 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects__list .name-card {
+.projects__list h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -1026,6 +1027,7 @@ img {
 .projects-list__wrap {
   border: 1px solid #eeeeee;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .projects-list__wrap:hover {
@@ -1051,7 +1053,8 @@ img {
     width: 354px;
   }
   .projects__list .name-card {
-    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
 }
@@ -1565,7 +1568,7 @@ img {
 @media screen and (min-width: 768px) {
   .active::after {
     content: "";
-    bottom: -37px;
+    bottom: -38px;
   }
 }
 
