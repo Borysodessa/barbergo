@@ -90,13 +90,19 @@
       width: 354px;
     }
 
-    .name-card {
+    
+  }
+}
+
+@media screen and(min-width: 768px) and (max-width: 1260px){
+  .name-card {
       white-space: nowrap;
       overflow: hidden;
       text-overflow:ellipsis;
     }
-  }
 }
+
+
 
 @media screen and (min-width: 1260px) {
   .projects__list {
